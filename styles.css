@@ -1,0 +1,15 @@
+textarea{
+    width:80%;
+    height:10vh;
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#output{
+    width:80%;
+    height:10vh;
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+}
