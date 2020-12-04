@@ -1,13 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+:root {
+    --background-color: #bae800;
+  
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
 textarea{
-    width:80%;
+    width:90%;
     height:10vh;
     display: block;
     margin: 1rem;
     padding: 1rem;
 }
 
+.container{
+    height: 100px;
+    background-color: var(--background-color);
+}
+
+.container h1{
+  
+}
+
+#btn-translate{
+    background-color: var(--background-color);
+}
+
+
 #output{
-    width:80%;
+    width:90%;
     height:10vh;
     border: 1px solid black;
     margin: 1rem;
