@@ -27,8 +27,17 @@ textarea{
   
 }
 
+.buttons{
+    
+}
+
 #btn-translate{
     background-color: var(--background-color);
+}
+
+#btn-clear{
+    background-color: var(--background-color);
+
 }
 
 

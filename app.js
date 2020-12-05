@@ -1,4 +1,5 @@
 var btnTranslate = document.querySelector("#btn-translate");
+var btnClear = document.querySelector('#btn-clear')
 var txtInput = document.querySelector("#txt-input");
 var outputDiv = document.querySelector('#output');
 
@@ -12,8 +13,7 @@ function getTranslationURL(input){
 
 function errorHandler(error){
     console.log("error occured", error);
-}
-
+};
 
 
 function clickHandler(){
@@ -28,4 +28,11 @@ function clickHandler(){
     .catch(errorHandler)        //catch keyword is used for error handling
 };
 
+function clearHandler(){
+    txtInput.value = '';
+    outputDiv.innerHTML = '';
+}
+
 btnTranslate.addEventListener("click", clickHandler);
+btnClear.addEventListener("click", clearHandler);
+
