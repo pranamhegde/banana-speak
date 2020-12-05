@@ -3,6 +3,8 @@ var btnClear = document.querySelector('#btn-clear')
 var txtInput = document.querySelector("#txt-input");
 var outputDiv = document.querySelector('#output');
 
+const proxyurl = "https://cors-anywhere.herokuapp.com/";
+ 
 var serverURL = "https://api.funtranslations.com/translate/minion.json";
 
 //https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json
@@ -19,7 +21,7 @@ function errorHandler(error){
 function clickHandler(){
     var inputText = txtInput.value;
 
-    fetch(getTranslationURL(inputText))
+    fetch(getTranslationURL(proxyurl + inputText))
     .then(response => response.json())
     .then(json => {
         var translatedText = json.contents.translated;
