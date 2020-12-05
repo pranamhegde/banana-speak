@@ -19,7 +19,7 @@ function errorHandler(error){
 function clickHandler(){
     var inputText = txtInput.value;
 
-    fetch(getTranslationURL(inputText))
+    fetch(getTranslationURL(inputText),{ AccessControlAllowOrigin: '*'})
     .then(response => response.json())
     .then(json => {
         var translatedText = json.contents.translated;
